@@ -1,0 +1,5 @@
+#!/bin/bash
+rm -Rf packages
+javapackager -deploy -native $1 -outdir packages -outfile augustmc \
+    -srcfiles augustmc_*.jar -appclass com.simontuffs.onejar.Boot \
+    -name "August MC" -title "August MC 2017.1" -v
